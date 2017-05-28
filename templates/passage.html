@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Jeu des loups-garous</title> <!-- On entre le titre --> 
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">	<!-- On vas chercher le fichier CSS pour la mise en page -->
+</head>
+<body>
+ <h1>Jeu des loups-garous</h1>
+ <table align="center">
+ <tr>
+ <td><img src="{{ url_for('static', filename=cartejoueur) }}"></td>	<!-- On vas chercher une image --> 
+ </tr>
+ </table>     
+ <p id="info">Bonjour {{ nom }} vous êtes {{ cartejoueur }} </p> <!-- On affiche le psoeudo et la carte du joueur --> 
+</body>
+</html>

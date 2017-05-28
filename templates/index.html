@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Jeu des loups-garous</title>	<!-- On entre le titre --> 
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> 	<!-- On vas chercher le fichier CSS pour la mise en page --> 
+</head>
+<body>
+ <h1>Jeu des loups-garous</h1>
+ <table align="center">
+ <tr>
+ <td><img src="{{ url_for('static', filename='jeu.jpg') }}"></td>	<!-- On vas chercher une image --> 
+ </tr>
+ </table>	
+<div id="connexion">    	<!-- l'utilisateur se connecte --> 
+<form action="/resultat" method="post">
+        <p>Choisissez un pseudo</p> 	
+	<input type="text" name="username">	<!-- l'utilisateur entre son psoeudo --> 
+	</br>
+	</br>
+        <input type="submit" name="send" value="Connexion">
+    </form> 
+</div>
+
+</body>
+</html>
